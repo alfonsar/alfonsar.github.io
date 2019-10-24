@@ -1,0 +1,186 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home Page</title>
+<style>
+body {
+	background-color: white;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light",
+		"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+}
+
+h3 {
+	float: left;
+}
+
+button {
+	border: none;
+}
+
+.row1 {
+	margin-top: 3%;
+	margin-left: 25%;
+}
+
+.padding-0 {
+	padding-right: 0;
+	padding-left: 0;
+	width: 18%;
+}
+
+.profilepic{
+	margin-top: 3%;
+	margin-left: 43%;
+	border-radius: 50%;
+	width: 140px;
+	height: 140px;
+}
+
+.padd-0 {
+	padding-bottom: 0px;
+}
+
+.bordbot {
+	border-width: 1px;
+	border-bottom-style: solid;
+}
+.texter{
+margin-top:8%;
+text-align:center;
+}
+.textbox{
+width:50%;
+text-align:center;
+margin-left:25%;
+}
+.textbox1{
+width:40%;
+text-align:left;
+margin-left:30%;
+}
+.bpm{
+width:400px;
+height:300px;
+}
+.pp{
+width:400px;
+height:150px;
+}
+</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row padd-0">
+				<img class=profilepic src="IMG_0551.JPG">
+		</div>
+		<div class="row1">
+			<div class="col-sm-3 padding-0 bordbot">
+				<button type="button" onclick="aboutAppear()" id="abt" class="btn">About</button>
+			</div>
+			<div class="col-sm-3 padding-0 bordbot">
+				<button type="button" id="proj" class="btn">Projects</button>
+			</div>
+			<div class="col-sm-3 padding-0 bordbot">
+				<button type="button" id="ints" class="btn">Interests</button>
+			</div>
+			<div class="col-sm-3 padding-0 bordbot">
+				<button type="button" id="conts" class="btn">Contact</button>
+			</div>
+		</div>
+		<div class="row texter">
+			<div id="aboutText">
+			<div class="textbox1">
+			<br> 
+			<h4>Hello,</h4>
+<br>
+My name is Alfonso Rojas and I am an upcoming Junior at the University of Southern California studying Computer Engineering and Computer Science. I am originally from San Jose, California, the heart of Silicon Valley.  While I study both hardware and software, I have found a deeper passion for software development. Currently, I am working on a few projects which you can see when you click on the projects tab. Through my class projects and experience with engineering organizations on campus, I have mastered the tools necessary to build and deploy software applications. 
+<br>
+<br>
+I am currently looking for an internship in Software Engineering where I can apply my skills as well as my intuitive sense for good design and usability to help a company grow and prosper. I am always eager to take on an opportunity so that I may grow as an engineer and learn more about my true passion. 
+<br>
+<br>
+<h4>
+Best,<br>
+Alfonso Rojas </h4>
+			</div>
+			</div>
+			<div id="projectText">
+			<h2>Beat Per Minute</h2>
+			<img class=bpm src="IMG_0603.jpeg">
+			<div class="textbox">
+			<br> 
+			Driven by our passion for engineering and interest in fashion, a team of engineering students and I wanted to assemble a jacket with embedded sensors.
+			We sewed on a pulse sensor and an accelerometer in specific locations in order to properly record data. Based on the inputs, we created different animations that displayed on the back of the jacket
+			on a LED matrix. Incorporating fashion with hardware created a futuristic aesthetic that we believe will be a tend in the future. 
+			</div>
+			<h2>Party People</h2>
+			<img class=pp src="logo.png">
+			<div class="textbox">
+			<br> 
+			Along with a group of friends, we realized that as college students, we want to have a designated place where we can find events, both academic and social, that are happening on or near campus. 
+			We wanted to have one site where people like us can go and look at events that are sponsored by organizations on campus and registered users. PartyPeople is just the website to do all that and more! Users
+			are able to create events and give specific details so that other people can attend, show interest, and write reviews for hosts so that they may improve their next event. 
+			</div>
+			</div>
+			<div id="interestText">This is where my interests will go</div>
+			<div id="contactText">
+			<h1>Want to talk?</h1>
+			<div class="textbox">
+			For more information, you can download my <a href="Rojas,Alfonso_Resume.pdf" download>resume</a>
+			</div>
+			<h4>You can also visit my social accounts</h4>
+			<div class="textbox">
+			<a href="https://www.linkedin.com/in/alfonsorojas98/">LinkedIn Profile</a>
+			<a href="https://github.com/alfonsar">Github Repository</a>
+			</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	$(document).ready(function() {
+		$("#projectText").hide();
+		$("#interestText").hide();
+		$("#contactText").hide();
+	});
+
+	$("#abt").click(function() {
+		$("#aboutText").show();
+		$("#projectText").hide();
+		$("#interestText").hide();
+		$("#contactText").hide();
+	});
+	$("#proj").click(function() {
+		$("#aboutText").hide();
+		$("#projectText").show();
+		$("#interestText").hide();
+		$("#contactText").hide();
+	});
+	$("#ints").click(function() {
+		$("#aboutText").hide();
+		$("#projectText").hide();
+		$("#interestText").show();
+		$("#contactText").hide();
+	});
+	$("#conts").click(function() {
+		$("#aboutText").hide();
+		$("#projectText").hide();
+		$("#interestText").hide();
+		$("#contactText").show();
+	});
+</script>
+</html>
