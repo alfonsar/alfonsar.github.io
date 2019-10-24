@@ -84,7 +84,7 @@ height:150px;
 <body>
 	<div class="container-fluid">
 		<div class="row padd-0">
-				<img class=profilepic src="IMG_0551.JPG">
+				<img class=profilepic src="ARojas Headshot.jpg">
 		</div>
 		<div class="row1">
 			<div class="col-sm-3 padding-0 bordbot">
