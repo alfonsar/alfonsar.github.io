@@ -139,7 +139,7 @@ Alfonso Rojas </h4>
 			<div id="contactText">
 			<h1>Want to talk?</h1>
 			<div class="textbox">
-			For more information, you can download my <a href="Rojas,Alfonso_Resume.pdf" download>resume</a>
+			For more information, you can download my <a href="Alfonso_Rojas_Resume.pdf" download>resume</a>
 			</div>
 			<h4>You can also visit my social accounts</h4>
 			<div class="textbox">
